@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Login </title>
+<meta charset="utf-8">
+<link rel="icon" href="img/mylogo.png">
+<link rel="stylesheet" href="css/logincss.css">
+</head>
+<body>
+	<div class="banner">
+		<div class="navbar">
+		   <a href="./welcome.html"><img src="img/logo.png" alt=""></a>
+		   <ul>
+			<li><a href="./dear daisy home.html">Home</a></li>
+			<li><a href="./info.html">Info</a></li>
+			<li><a href="./shop.html">Shop</a></li>
+			<li><a href="./services.html">Services</a></li>
+			<li><a href="./contact.html">Contact</a></li>
+			<li><a href="./login.html">Login</a></li>
+			<li><a href="#"><img src="img/seacrhicon.png"></a></li>
+			<li><a href="./cart.html"><img src="img/carticon.png" alt=""></a></li>
+	    	   </ul>
+		</div>
+	
+<main>
+        <div class="container">
+            <div class="forms">
+                <div class="form login">
+                    <span class="title">Login</span>
+
+                    <form action="./successpage.html">
+                        <div class="inputfield">
+                            <input type="text" placeholder="Enter your email" required>
+                            <img src="img/email.png" class="icon">
+                        </div>
+						<div class="inputfield" data-label="pw">
+                            <input type="password"  class="password" placeholder="Enter your password" required>
+                            <img src="img/password.png" class="icon">
+							<img src="img/showpw.png" class="show">
+						</div>
+
+						<div class="checkboxtext">
+							<div class="checkboxcontent">
+								<input type="checkbox" id="logcheck">
+								<label for="logcheck" class="text">Remember me</label>
+							</div>
+
+							<a href="./forgetpw.html" class="text">Forgot password?</a>
+						</div>
+
+						<div class="inputfield button">
+                            <input type="submit" class="btn" value="Login Now">
+						</div>
+                    </form>
+				
+					<div class="login_signup">
+						<span class="text">Not a member?
+							<a href="#" class="text signuplink">Signup now</a>
+						</span>
+					</div>
+                </div>
+
+				<!--signup form-->
+				<div class="form signup">
+                    <span class="title">Signup</span>
+
+                    <form action="./signupsuccess.html" onsubmit=" return validateForm()">
+                        <div class="inputfield">
+                            <input type="text" placeholder="Enter your name" required>
+                            <img src="img/name.png" class="icon">
+                        </div>
+						<div class="inputfield">
+                            <input type="text" placeholder="Enter your email" required>
+                            <img src="img/email.png" class="icon">
+                        </div>
+						<div class="inputfield">
+                            <input type="password" class="password" placeholder="Enter new password" required>
+                            <img src="img/password.png" class="icon">
+						</div>
+						<div class="inputfield">
+                            <input type="password" class="password" placeholder="Confirm your password" required>
+                            <img src="img/password.png" class="icon">
+							<img src="img/showpw.png" class="show2">
+						</div>
+
+						<div class="inputfield button">
+                            <input type="submit" value="Sign Up">
+						</div>
+                    </form>
+				
+					<div class="login_signup">
+						<span class="text">Have an account already?
+							<a href="#" class="text loginlink">Login</a>
+						</span>
+					</div>
+                </div>
+            </div>
+        </div>
+
+		<script src="script/loginscript.js"></script>
+	</main>
+</body>
+</html>

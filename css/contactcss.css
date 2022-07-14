@@ -1,0 +1,205 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #f5d6c3;
+	color: #24262b;
+	font-family: 'Courier New', Courier, monospace;
+}
+.banner{
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("candle.jpg");
+    background-position: top;
+}
+.navbar{
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo{
+	width: 120px;
+	cursor: pointer;
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: #f5d6c3;
+	text-transform: uppercase;
+}
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0%;
+	background: #f66106;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s
+}
+.navbar ul li:hover::after{
+	width: 100%
+}
+.container{
+	max-width: 1170px;
+	margin: auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+	padding: 70px 0;
+}
+.footer-col{
+	width: 25%;
+	padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #f66106;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffff;
+	padding-left: 10px;
+}
+.contact{
+    position: relative;
+    min-height: 50vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+}
+.contact .content p{
+    font-weight: 300;
+}
+.contactcontainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.contactcontainer .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contactcontainer .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contactcontainer .contactinfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.contactcontainer .contactinfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+	font-weight: 300;
+}
+.contactform{
+	width: 40%;
+	padding: 40px;
+	background: #fff;
+}
+.contactform h2{
+	font-size: 30px;
+	color: #333;
+	font-weight: 500;
+}
+.contactform .inputbox{
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea{
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	resize: none;
+}
+.contactform .inputbox span{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #666;
+}
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span{
+	color: #f66106;
+	font-size: 12px;
+	transform: translateY(-20px);
+}
+

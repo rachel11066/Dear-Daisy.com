@@ -1,0 +1,167 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+body{
+	background-color: #f5d6c3;
+	color: #24262b;
+	font-family: 'Poppins', sans-serif;
+}
+.banner{
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("candle.jpg");
+    background-position: top;
+}
+.navbar{
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo{
+	width: 120px;
+	cursor: pointer;
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: #f5d6c3;
+	text-transform: uppercase;
+}
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0%;
+	background: #f66106;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s
+}
+.navbar ul li:hover::after{
+	width: 100%
+}
+.container{
+	max-width: 1170px;
+	margin: auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+	padding: 70px 0;
+}
+.footer-col{
+	width: 25%;
+	padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #f66106;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffff;
+	padding-left: 10px;
+}
+
+
+table{
+    border: 1px solid #fff;
+    width: 100%;
+}
+tr{
+    font-size: 20px;
+}
+td{
+    text-align: center;
+    vertical-align: middle;
+}
+.quantity{
+    width: 30px;
+    height: 40px;
+}
+.checkout ul{
+    border: 2px solid #ebebeb;
+    background: #f66106;
+    padding-left:25px;
+    padding-right:25px;
+    padding-top:16px;
+    padding-bottom: 20px;
+}
+.checkout ul li{
+    list-style: none;
+    font-size:16px;
+    font-weight: bold;
+    color:#252525;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.checkout ul li.subtotal{
+    font-weight: bold;
+    text-transform: capitalize;
+    border-bottom:1px solid #fff;
+    padding-bottom: 14px;
+}
+.checkout ul li.subtotal span{
+    font-weight: bold;
+}
+.checkout ul li.cart-total{
+    padding-top: 10px
+}
+.checkout ul li.cart-total span{
+    color:#fff;
+}
+.checkout ul li span{
+    float:right;
+}
+.checkout .proceed-btn{
+    font-size:15px;
+    font-weight: bold;
+    color:#fff;
+    background:#252525;
+    text-transform: uppercase;
+    padding:15px 25px 14px 25px;
+    display: block;
+    text-align: center;
+}

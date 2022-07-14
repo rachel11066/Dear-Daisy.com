@@ -1,0 +1,208 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+.banner{
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("candle.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.navbar{
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo{
+	width: 120px;
+	cursor: pointer;
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: #f5d6c3;
+	text-transform: uppercase;
+}
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0%;
+	background: #f66106;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s
+}
+.navbar ul li:hover::after{
+	width: 100%
+}
+
+main{
+	height: 50vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.container{
+	position: relative;
+	max-width: 430px;
+	width: 100%;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+.container .forms{
+	display: flex;
+	align-items: center;
+	height: 440px;
+	width: 200%;
+	transition: height 0.2s ease;
+}
+.container .form{
+	width: 50%;
+	padding: 30px;
+	transition: margin-left 0.18s ease;
+}
+.container.active .login{
+	margin-left: -60%;
+	opacity: 0;
+	transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+.container .signup{
+	opacity: 0;
+	transition: opacity 0.09s ease;
+}
+.container.active .signup{
+	opacity: 1;
+	transition: opacity 0.2s ease;
+}
+.container.active .forms{
+	height: 600px;
+}
+.container .form .title{
+	position: relative;
+	font-size: 27px;
+	font-weight: 600;
+}
+.form .title::before{
+	content:'';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 30px;
+	background-color: #f66106;
+	border-radius: 25px;
+}
+.form .inputfield{
+	position: relative;
+	margin-top: 50px;
+	width: 100%;
+	margin-top: 30px;
+}
+.form .inputfield{
+	position: relative;
+	height: 50px;
+	width: 90%;
+	margin-top: 30px;
+}
+.inputfield input{
+	/*position: absolute;*/
+	height: 100%;
+	width: 90%;
+	padding: 0 25px;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	border-bottom: 2px solid #24262b;
+	border-top: 2px solid transparent;
+	transition: all 0.5s ease;
+}
+.inputfield input:is(:focus, :valid){
+	border-bottom-color: #f66106;
+}
+.inputfield img{
+	position: absolute;
+	height: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: all 0.5s ease;
+}
+.inputfied .icon{
+	left: 0;
+}
+.inputfield .show{
+	right: 0;
+	cursor: pointer;
+	padding: 10px;
+}
+.form .checkboxtext{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+.checkboxtext .checkboxcontent{
+	display: flex;
+	align-items: center;
+}
+.checkboxcontent input{
+	margin: 0 8px 0 4px;
+	accent-color: #4070f4
+}
+.form .text{
+	color: #333;
+	font-size: 14px;
+}
+.form a.text{
+	color: #4070f4;
+	text-decoration: none;
+}
+.form a:hover{
+	text-decoration: underline;
+}
+.form .button{
+	margin-top: 35px;
+}
+.form .button input{
+	border: none;
+	margin-left: 30px;
+	letter-spacing: 1px;
+	border-radius: 6px;
+	background-color: #f66106;
+	cursor: pointer;
+	transition: all 0.5s ease;
+	left: 30px;
+}
+.button input:hover{
+	background-color: #a74305;
+}
+.form .login_signup{
+	margin-top: 30px;
+	text-align: center;
+}
+.inputfield .show2{
+	right: 0;
+	cursor: pointer;
+	padding: 10px;
+}
+span.errormsg{
+	margin-bottom: 5px;
+	color: #f74040;
+	display: inline-block;
+}
+.form .inputfield .btn{
+	text-transform: uppercase;
+	color: #24262b;
+}

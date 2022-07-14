@@ -1,0 +1,177 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #f5d6c3;
+	color: #24262b;
+	font-family: 'Poppins', sans-serif;
+}
+
+.banner{
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("candle.jpg");
+    background-position: top;
+}
+.navbar{
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo{
+	width: 120px;
+	cursor: pointer;
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: #f5d6c3;
+	text-transform: uppercase;
+}
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0%;
+	background: #f66106;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s
+}
+.navbar ul li:hover::after{
+	width: 100%
+}
+.container{
+	max-width: 1170px;
+	margin: auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+	padding: 70px 0;
+}
+.footer-col{
+	width: 25%;
+	padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #f66106;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffff;
+	padding-left: 10px;
+}
+
+.psmallcontainer{
+    max-width: 1000px;
+    margin: auto;
+}
+.prow{
+    display: flex;
+    align-items: auto;
+    padding-left: wrap;
+    justify-content: space-around;
+}
+.product{
+    margin-top: 80px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.product .col-2 img{
+    padding: 0;
+}
+.product.col-2{
+    padding: 20px;
+}
+.col-2{
+    flex-basis: 30%;
+    min-width: 300px;
+    margin: 25px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #f66106;
+}
+input:focus{
+    outline: none;
+}
+a{
+    text-decoration: none;
+    color: #24262b;
+}
+.btn{
+    display: inline-block;
+    background: #f66106;
+    color: #f5d6c3;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #bbbbbb;
+}
+.col-2 ul{
+    list-style: circle;
+}

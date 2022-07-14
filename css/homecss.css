@@ -1,0 +1,167 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+.banner{
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("candle.jpg");
+    background-position: top;
+}
+.navbar{
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo{
+	width: 120px;
+	cursor: pointer;
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: #f5d6c3;
+	text-transform: uppercase;
+}
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0%;
+	background: #f66106;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s
+}
+.navbar ul li:hover::after{
+	width: 100%
+}
+.container{
+	max-width: 1170px;
+	margin: auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+	padding: 70px 0;
+}
+.footer-col{
+	width: 25%;
+	padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #f66106;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #fff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffff;
+	padding-left: 10px;
+}
+
+
+.mainrow{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-left: 300px;
+	padding-right: 300px;
+}
+.col{
+	flex-basis: 50%;
+	min-width: 300px;
+}
+.col img{
+	max-width: 100%;
+	padding: 50px 0;
+}
+.col h1{
+	font-size: 50px;
+	line-height: 60px;
+	margin: 25px 0;
+	font-family: 'Courier New', Courier, monospace;
+}
+.col p{
+	font-family: 'Courier New', Courier, monospace;
+}
+.button{
+	display: inline-block;
+	background: #f66106;
+	color: #f5d6c3;
+	padding: 8px 30px;
+	margin: 30px 0;
+	border-radius: 30px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'Courier New', Courier, monospace;
+	transition: background 0.5s;
+}
+.button:hover{
+	background: #563434;
+}
+.header{
+	background: radial-gradient(#fff,#ffd6d6);
+}
+
+.candles{ 
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #f5d6c3;
+}
+.candles img{
+	height: auto;
+	width: 430px;
+}
+.maintext{
+	width: 550px;
+}
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dear Daisy-Contact</title>
+<meta charset="utf-8">
+<link rel="icon" href="img/mylogo.png">
+<link rel="stylesheet" href="css/contactcss.css">
+</head>
+<body>
+	<div class="banner">
+		<div class="navbar">
+			<a href="./welcome.html"><img src="img/logo.png" alt=""></a>
+		   <ul>
+			<li><a href="./dear daisy home.html">Home</a></li>
+			<li><a href="./info.html">Info</a></li>
+			<li><a href="./shop.html">Shop</a></li>
+			<li><a href="./services.html">Services</a></li>
+			<li><a href="./contact.html">Contact</a></li>
+			<li><a href="./login.html">Login</a></li>
+			<li><a href="#"><img src="img/seacrhicon.png"></a></li>
+			<li><a href="./cart.html"><img src="img/carticon.png" alt=""></a></li>
+	    	</ul>
+		</div>
+	</div>
+
+	<section class="contact">
+		<div class="content">
+			<h2>Contact Us</h2>
+			<p>We are more than willing to help you out with anything! Please do contact us!</p>
+		</div>
+		<div class="contactcontainer">
+			<div class="contactinfo">
+				<div class="box">
+					<div class="icon"><img src="img/address.png"></div>
+					<div class="text">
+						<h3>Address</h3>
+						<p> Bandar Bukit Puchong,<br>Selangor, Malaysia</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="icon"><img src="img/phone.png"></div>
+					<div class="text">
+						<h3>Phone</h3>
+						<p> +60173511066</p>
+					</div>
+				</div>
+				<div class="box">
+					<div class="icon"><img src="img/email.png"></div>
+					<div class="text">
+						<h3>Email</h3>
+						<p> 20080420@imail.sunway.edu.my</p>
+					</div>
+				</div>
+			</div>
+			<div class="contactform">
+				<form>
+				<h2>Send Us a Message!</h2>
+				<div class="inputbox">
+					<label for="name">Full Name</label>
+					<input type="text"  id="name" name="" required="required">
+				</div>
+				<div class="inputbox">
+					<label for="email"> Email</label>
+					<input type="text" id="email" name="" required="required">
+					<small id="error" style="color: red;display: none;font-weight: normal;">Please enter a valid email</small>
+				</div>
+				<div class="inputbox">
+					<label for="message">Type your message</label>
+					<textarea id="message" required="required"></textarea>
+					<small id="sent" style="color: blue;display: none;font-weight: normal;">Your message is sent.</small>
+				</div>
+				<div class="inputbox">
+					<button style="width: 100px; background: #f66106; border: none; padding: 10px; font-size: 18px;"  onclick="return validateForm()">Send</button>
+				</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<script src="script/contactjs.js"></script>
+
+<!----footer---->
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col">
+				<h4>Dear Daisy</h4>
+				<ul>
+					<li><a href="./dear daisy home.html">about us</a></li>
+					<li><a href="./services.html">our services</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>scents</h4>
+				<ul>
+					<li><a href="./scents.html">Floral</a></li>
+					<li><a href="./scents.html">Citrus</a></li>
+					<li><a href="./scents.html">Fruity</a></li>
+					<li><a href="./scents.html">Woody</a></li>
+					<li><a href="./scents.html">Know More</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>shop with us</h4>
+				<ul>
+					<li><a href="./contact.html">customize</a></li>
+					<li><a href="./lavender.html">lavender</a></li>
+					<li><a href="./lemongrass.html">Lemongrass</a></li>
+					<li><a href="./rose vanilla.html">Rose Vanilla</a></li>
+					<li><a href="./shop.html">more</a></li>
+				</ul>
+			</div>
+			<div class="footer-col">
+				<h4>contact us</h4>
+				<div class="social links"> 
+				<a href="https://wa.me/60173511066"><img src= "img/whatsapp.png" alt=""></a>
+				<a href="https://msng.link/o/?rachel11066=tg"><img src= "img/telegram.png" alt=""></a>
+				<a href="https://www.facebook.com/rachel.baymax"><img src= "img/facebook.png" alt=""></a>
+				<a href="https://www.instagram.com/rachelllfoo/"><img src= "img/insta.png" alt=""></a>
+				</div>
+			</div>	
+		</div>
+	</div>
+	
+</footer>
+</body>
+</html>
